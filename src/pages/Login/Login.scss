@@ -1,0 +1,97 @@
+.login{
+    background-color: #f0f2f5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card{
+        display: flex;
+        width: 50%;
+        background-color: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+
+        .left-c{
+
+            background: linear-gradient(rgba(39,11,96,0.5),rgba(39,11,96,0.5)),url("https://images.pexels.com/photos/267399/pexels-photo-267399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center;
+            background-size: cover;
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 25px;
+            color: white;
+
+            h1{
+                font-size: 60px;
+            
+            }
+
+            p{
+                font-size: 17px;
+            }
+
+            span{
+                font-size: 13px;
+            }
+            button{
+                width: 30%;
+                background-color: #1877F2;
+                padding: 5px;
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+
+        }
+
+        .right{
+
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 25px;
+            h1{
+                font-weight: 500;
+                font-size: 20px;
+            }
+
+
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                input{
+                    padding: 14px 16px;
+                    width: 100%;
+                    border: 1px solid #dddfe2;
+                    border-radius: 5px;
+                    font-size: 17px;
+                    outline: none;
+                }
+
+                button{
+                    color: white;
+                    background-color: #1877f2;
+                    border: none;
+                    border-radius: 6px;
+                    font-size: 20px;
+                    line-height: 48px;
+                    padding: 0 16px;
+                }
+            }
+        }
+
+        
+    }
+    
+}

@@ -1,0 +1,93 @@
+.rightbar{
+    flex: 3;
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 5px;
+
+        .contacts{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 5px 20px;
+
+            .heading{
+                display: flex;
+                justify-content: space-between;
+                font-size: 18px;
+            
+                div{
+                    display: flex;
+                    gap: 10px;
+                    cursor: pointer;
+
+                    .icon{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        padding: 5px;
+                        background: transparent;
+                    }
+                    .icon:hover{
+                        background: rgb(239, 238, 238) ;
+                    }
+                }
+                
+            }
+
+            .item{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 8px;
+                padding: 6px 5px;
+                border-radius: 8px;
+                cursor: pointer;
+
+                img{
+                     width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        object-fit:cover ;
+                }
+            }
+            .item:hover{
+                background: rgb(239, 238, 238);
+            }
+
+        }
+
+        .groups{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 5px 20px;
+
+            .heading{
+                font-size: 18px;
+            }
+
+            .create-group{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border-radius: 8px;
+                padding: 8px;
+                cursor: pointer;
+                .icon{
+                    width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        padding: 5px;
+                        background: rgb(239, 238, 238);
+                        
+
+                }
+            }
+            .create-group:hover{
+                background:rgb(227, 226, 226);
+            }
+        }
+    }
+}
