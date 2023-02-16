@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './NavBar.scss';
 
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
@@ -7,8 +7,11 @@ import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../context/authContext';
 
 const NavBar = () => {
+  const {currUser} = useContext(AuthContext);
+
   return (
     <div className='navbar'>
       <div className='logo'>
@@ -35,7 +38,7 @@ const NavBar = () => {
         
         
         <div className='menu-trigger'>
-          <img src='https://images.pexels.com/photos/5199158/pexels-photo-5199158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'></img>
+          <img src={currUser.profilePic}></img>
         </div>
       </div>
     </div>

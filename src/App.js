@@ -1,3 +1,7 @@
+import {useContext} from "react";
+import {AuthContext} from "./context/authContext";
+
+
 import Login  from "./pages/Login/Login"
 import LeftBar from "./components/leftbar/LeftBar"
 import RightBar from "./components/righbar/RightBar"
@@ -9,7 +13,7 @@ import Register from "./pages/Register/Register";
 import { createBrowserRouter, Navigate, Outlet, RouterProvider, } from "react-router-dom";
 function App() {
 
-  const currUser = true;
+ const {currUser} = useContext(AuthContext); 
 
   const Layout = () => {
     return (
@@ -25,7 +29,7 @@ function App() {
   }
 
   const ProtectedRoute = ({children}) => {
-    if(currUser===false){
+    if(!currUser){
       return <Navigate to="/login" />;
     }
 

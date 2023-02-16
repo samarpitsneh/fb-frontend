@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './LeftBar.scss';
 
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
@@ -8,8 +8,11 @@ import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import AppsRoundedIcon from '@mui/icons-material/AppsRounded';
 import PeopleRoundedIcon from '@mui/icons-material/PeopleRounded';
 import InsertLinkIcon from '@mui/icons-material/InsertLink';
+import { AuthContext } from '../../context/authContext';
 
 const LeftBar = () => {
+
+  const {currUser} =useContext(AuthContext) ;
   return (
     <div className='leftbar'>
       <div className='container'>
@@ -19,8 +22,8 @@ const LeftBar = () => {
             <span>Home</span>
           </div>
           <div className='item profile'>
-          <img src='https://images.pexels.com/photos/5199158/pexels-photo-5199158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'></img>
-          <span>sneh</span>
+          <img src={currUser.profilePic}></img>
+          <span>{currUser.name}</span>
           </div>
         </div>
         
