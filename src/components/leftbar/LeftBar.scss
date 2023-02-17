@@ -1,9 +1,9 @@
 .leftbar{
     flex: 2;
-     background: transparent;
+     background: #f7f7f7;
      position: sticky;
      top: 75px;
-     height: 100vh;
+     height: calc(100vh - 70px);
 
     .container{
         display: flex;
@@ -22,7 +22,7 @@
               
               padding: 10px 5px;
            
-            .item{
+            .item-lb{
                 border-radius: 8px;
                 padding:5px 10px;
                 display: flex;
@@ -53,11 +53,11 @@
                 }
              
             }
-            .item:hover{
+            .item-lb:hover{
                 background: lightgray;
             }
             
-            .link{
+            .link-lb{
                 border-radius: 8px;
                 padding: 5px 10px;
                 display: flex;
@@ -77,7 +77,7 @@
                     font-size: 14px;
                 }
             }
-            .link:hover{
+            .link-lb:hover{
                 background: lightgrey;
             }
         }

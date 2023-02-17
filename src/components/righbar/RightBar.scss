@@ -1,5 +1,9 @@
 .rightbar{
     flex: 3;
+    position: sticky;
+     top: 75px;
+     height: calc(100vh - 70px);
+     background-color: #f7f7f7;
     .container{
         display: flex;
         flex-direction: column;
@@ -11,10 +15,13 @@
             flex-direction: column;
             gap: 10px;
             padding: 5px 20px;
+            font-weight: 500;
+                    font-size: 14px;
 
             .heading{
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 font-size: 18px;
             
                 div{
@@ -44,6 +51,8 @@
                 padding: 6px 5px;
                 border-radius: 8px;
                 cursor: pointer;
+                font-weight: 500;
+                    font-size: 14px;
 
                 img{
                      width: 30px;
@@ -63,6 +72,8 @@
             flex-direction: column;
             gap: 10px;
             padding: 5px 20px;
+            font-weight: 500;
+                    font-size: 14px;
 
             .heading{
                 font-size: 18px;

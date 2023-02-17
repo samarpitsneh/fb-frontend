@@ -1,12 +1,16 @@
 .navbar{
     display: flex;
     justify-content: space-between;
+    gap: 20px;
     align-items: center;
     padding: 10px;
     height: 55px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    position: sticky;
+     top: 0px;
+     background-color: white;
+     z-index: 2;
     .logo{
-        b
       
         svg{
             fill: #1877F2;
@@ -17,6 +21,7 @@
 
     .search{
         display: flex;
+        justify-content: center;
         align-items: center;
         gap: 5px;
         border-radius: 50px;
@@ -37,8 +42,9 @@
 
     }
 
-    .profile{
+    .profile-section{
         display: flex;
+        
         gap: 10px;
         align-items: center;
 

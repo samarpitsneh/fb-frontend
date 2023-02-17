@@ -17,11 +17,11 @@ const LeftBar = () => {
     <div className='leftbar'>
       <div className='container'>
         <div className='menu'>
-          <div className='item profile'>
+          <div className='item-lb'>
             <HomeRoundedIcon className='icon' />
             <span>Home</span>
           </div>
-          <div className='item profile'>
+          <div className='item-lb'>
           <img src={currUser.profilePic}></img>
           <span>{currUser.name}</span>
           </div>
@@ -30,22 +30,22 @@ const LeftBar = () => {
         <hr />
 
         <div className='menu'>
-          <div className='item'>
+          <div className='item-lb'>
               <SmartDisplayRoundedIcon className='icon' />
               <span>watch</span>
           </div>
 
-          <div className='item'>
+          <div className='item-lb'>
             <StoreIcon className='icon' />
             <span>MarketPlace</span>
           </div>
 
-          <div className='item'>
+          <div className='item-lb'>
             <SportsEsportsIcon className='icon' />
             <span>Gaming</span>
           </div>
 
-          <div className='link'>
+          <div className='link-lb'>
             <AppsRoundedIcon className='icon' />
             <span>See all</span>
           </div>
@@ -54,7 +54,7 @@ const LeftBar = () => {
         <hr />
         
         <div className='menu'>
-          <div className='link'>
+          <div className='link-lb'>
             <PeopleRoundedIcon className='icon' />
             <span>See all groups</span>
           </div>
@@ -63,7 +63,7 @@ const LeftBar = () => {
         <hr />
 
         <div className='menu'>
-          <div className='link'>
+          <div className='link-lb'>
             <InsertLinkIcon className='icon'/>
             <span>See all shortcuts</span>
           </div>

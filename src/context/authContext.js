@@ -11,7 +11,7 @@ export const AuthContextProvider = ({children}) => {
             setCurrUser(
                 {
                     id:1,
-                    name:"sneh",
+                    name:"Sneh",
                     profilePic: "https://images.pexels.com/photos/5199158/pexels-photo-5199158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                 }
             );

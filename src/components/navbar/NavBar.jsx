@@ -3,7 +3,7 @@ import './NavBar.scss';
 
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
+
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { Link } from 'react-router-dom';
@@ -24,10 +24,8 @@ const NavBar = () => {
         <SearchOutlinedIcon />
         <input placeholder='Search Facebook' />
       </div>
-      <div className='profile'>
-        <div className='icon'>
-        <DarkModeOutlinedIcon />
-        </div>
+      <div className='profile-section'>
+        
         <div className='icon'>
         <MailOutlineIcon />
         </div>
