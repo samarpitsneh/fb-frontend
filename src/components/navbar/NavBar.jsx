@@ -5,7 +5,7 @@ import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../context/authContext';
 import DropDownMenu from '../dropdownMenu/DropDownMenu';
@@ -39,7 +39,7 @@ const NavBar = () => {
         
         <div className="profile-menu">
         <div className='menu-trigger' onClick={() => setOpen(!open)}>
-          <img src={currUser.profilePic}></img>
+          <img src={currUser.profilePic} alt="profile pic"></img>
         </div>
 
         <div className='drop-Menu'>

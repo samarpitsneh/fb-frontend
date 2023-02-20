@@ -22,29 +22,29 @@ const RightBar = () => {
           </div>
 
           <div className='item'>
-          <img src='https://images.pexels.com/photos/5199158/pexels-photo-5199158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'></img>
+          <img src='https://images.pexels.com/photos/5199158/pexels-photo-5199158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt="img"></img>
           <span>sneh</span>
           </div>
           <div className='item'>
-          <img src='https://images.pexels.com/photos/5199158/pexels-photo-5199158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'></img>
+          <img src='https://images.pexels.com/photos/5199158/pexels-photo-5199158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'  alt="img"></img>
           <span>sneh</span>
           </div>
           <div className='item'>
-          <img src='https://images.pexels.com/photos/5199158/pexels-photo-5199158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'></img>
+          <img src='https://images.pexels.com/photos/5199158/pexels-photo-5199158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'  alt="img"></img>
           <span>sneh</span>
           </div>
           <div className='item'>
-          <img src='https://images.pexels.com/photos/5199158/pexels-photo-5199158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'></img>
-          <span>sneh</span>
-          </div>
-
-          <div className='item'>
-          <img src='https://images.pexels.com/photos/5199158/pexels-photo-5199158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'></img>
+          <img src='https://images.pexels.com/photos/5199158/pexels-photo-5199158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'  alt="img"></img>
           <span>sneh</span>
           </div>
 
           <div className='item'>
-          <img src='https://images.pexels.com/photos/5199158/pexels-photo-5199158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'></img>
+          <img src='https://images.pexels.com/photos/5199158/pexels-photo-5199158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt="img"></img>
+          <span>sneh</span>
+          </div>
+
+          <div className='item'>
+          <img src='https://images.pexels.com/photos/5199158/pexels-photo-5199158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt="img"></img>
           <span>sneh</span>
           </div>
         </div>

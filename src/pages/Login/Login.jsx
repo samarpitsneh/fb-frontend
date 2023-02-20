@@ -1,16 +1,14 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
-import { AuthContext } from '../../context/authContext';
+
 
 import './Login.scss'
 
 const Login = () => {
 
-  const {login} = useContext(AuthContext); 
+  
 
-  const handleLogin = () =>{
-    login();
-  }
+  
   return (
     <div className='login'>
       <div className='card'>

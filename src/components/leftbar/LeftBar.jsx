@@ -23,7 +23,7 @@ const LeftBar = () => {
             <span>Home</span>
           </div>
           <div className='item-lb'>
-          <img src={currUser.profilePic}></img>
+          <img src={currUser.profilePic} alt="profile pic"></img>
           <Link to={`/profile/djbdj`} style={{textDecoration:"none",color:"black"}}>
           <span>{currUser.name}</span>
           </Link>

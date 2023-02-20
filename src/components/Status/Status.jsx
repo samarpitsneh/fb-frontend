@@ -15,7 +15,7 @@ const Status = () => {
     <div className='status'>
       
         <div className='text'>
-          <img src={currUser.profilePic}></img>
+          <img src={currUser.profilePic}  alt="img"></img>
           <input placeholder={`whats on your mind, ${currUser.name}?`}></input>
         </div>
         <hr />

@@ -20,7 +20,7 @@ const DropDownMenu = () => {
         <div className='menu'>
           
           <div className='item pf'>
-          <img src={currUser.profilePic}></img>
+          <img src={currUser.profilePic} alt="profile pic"></img>
           <Link to={`/profile/djbdj`} style={{textDecoration:"none",color:"black"}}>
           <span>{currUser.name}</span>
           </Link>

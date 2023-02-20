@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { AuthContext } from '../../context/authContext';
 import "./Story.scss";
 
-import AddIcon from '@mui/icons-material/Add';
+
 
 const stories = [
   {
