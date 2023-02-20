@@ -10,20 +10,24 @@ import PeopleRoundedIcon from '@mui/icons-material/PeopleRounded';
 import InsertLinkIcon from '@mui/icons-material/InsertLink';
 import { AuthContext } from '../../context/authContext';
 
+import { Link } from 'react-router-dom';
 const LeftBar = () => {
 
   const {currUser} =useContext(AuthContext) ;
   return (
     <div className='leftbar'>
       <div className='container'>
-        <div className='menu'>
+      <div className='menu'>
           <div className='item-lb'>
             <HomeRoundedIcon className='icon' />
             <span>Home</span>
           </div>
           <div className='item-lb'>
           <img src={currUser.profilePic}></img>
+          <Link to={`/profile/djbdj`} style={{textDecoration:"none",color:"black"}}>
           <span>{currUser.name}</span>
+          </Link>
+          
           </div>
         </div>
         

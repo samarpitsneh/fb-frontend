@@ -40,8 +40,9 @@ const Login = () => {
 
               
               <input type='password' placeholder='password'></input>
-
-              <button onClick={handleLogin}>Login</button>
+              <Link to="/">
+              <button>Login</button>
+              </Link>
             </form>
         </div>
 

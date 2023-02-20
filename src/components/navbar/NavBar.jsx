@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext,useState } from 'react'
 import './NavBar.scss';
 
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
@@ -8,9 +8,11 @@ import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../context/authContext';
+import DropDownMenu from '../dropdownMenu/DropDownMenu';
 
 const NavBar = () => {
   const {currUser} = useContext(AuthContext);
+  const [open,setOpen] = useState(false);
 
   return (
     <div className='navbar'>
@@ -35,8 +37,14 @@ const NavBar = () => {
         
         
         
-        <div className='menu-trigger'>
+        <div className="profile-menu">
+        <div className='menu-trigger' onClick={() => setOpen(!open)}>
           <img src={currUser.profilePic}></img>
+        </div>
+
+        <div className='drop-Menu'>
+          {open && <DropDownMenu />}
+        </div>
         </div>
       </div>
     </div>

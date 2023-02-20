@@ -3,7 +3,7 @@
     justify-content: space-between;
     gap: 20px;
     align-items: center;
-    padding: 10px;
+    padding: 5px 10px;
     height: 55px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     position: sticky;
@@ -48,14 +48,23 @@
         gap: 10px;
         align-items: center;
 
-        .menu-trigger{
+        .icon{
+            cursor: pointer;
+        }
+
+        .profile-menu{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            .menu-trigger{
             
-            img{
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                object-fit:cover ;
-                cursor: pointer;
+                img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit:cover ;
+                    cursor: pointer;
+                }
             }
         }
     }
