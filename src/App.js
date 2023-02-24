@@ -28,13 +28,7 @@ function App() {
     )
   }
 
-  const ProtectedRoute = ({children}) => {
-    if(!currUser){
-      return <Navigate to="/login" />;
-    }
-
-    return children;
-  }
+ 
 
   const router = createBrowserRouter(
     [
@@ -48,9 +42,7 @@ function App() {
       },
       {
         path : "/",
-        element: <ProtectedRoute>
-                    <Layout />
-                 </ProtectedRoute>,
+        element: <Layout />,
         children: [
           {
             path: "/",
